@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    cursor: pointer;
+}
+
+body{
+    color: var(--off-white);
+    padding: 2rem 0 0 0;
+    background-color: var(--black-02);
+}
+
+:root {
+    --black-01: #1a1a1a;
+    --black-02 : #0D0D0D;
+    --off-white: #D9D9D9;
+    --text-color: #fafafa;
+
+    --black-lighter-01: #474747;
+    --black-lighter-02: #5c5c5c;
+    --black-lighter-03 : #1f1f1f;
+
+    --black-gradient-01: linear-gradient(180deg, #1A1A1A 14.58%, #1F1F1F 100%);
+    --black-gradient-02: linear-gradient(180deg, #262626 14.58%, #1F1F1F 100%);
+
+    --blue-gradient: linear-gradient(90deg, rgba(51, 163, 255, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
+
+    --yellow-glow: #423524;
+    --blue: #33A3FF;
+    --red: #AA2B2B;
+}
+
+button.clickable {
+    border-radius: 0.4rem;
+    border: 1px solid var(--black-lighter-01);
+    background: var(--black-gradient-01);
+    width: 3.6rem;
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.transparent {
+    background: transparent;
+    border: none;
+}
