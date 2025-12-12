@@ -33,12 +33,14 @@ body{
 
     --black-gradient-01: linear-gradient(180deg, #1A1A1A 14.58%, #1F1F1F 100%);
     --black-gradient-02: linear-gradient(180deg, #262626 14.58%, #1F1F1F 100%);
+    --glow-gradient : linear-gradient(180deg, var(--yellow-glow) -3.73%, var(--black-01) 10.23%);
 
     --blue-gradient: linear-gradient(90deg, rgba(51, 163, 255, 0.40) 0%, rgba(0, 0, 0, 0.00) 100%);
 
     --yellow-glow: #423524;
     --blue: #33A3FF;
     --red: #AA2B2B;
+    
 }
 
 button.clickable {
