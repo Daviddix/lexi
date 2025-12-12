@@ -1,5 +1,4 @@
 import "./globals.css";
-import "./globals.css";
 import { Cormorant, Cormorant_Infant, Cormorant_SC } from "next/font/google";
 
 const cor = Cormorant({

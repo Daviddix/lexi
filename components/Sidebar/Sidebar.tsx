@@ -30,7 +30,9 @@ function Sidebar() {
                         <div className="left">
                             <h1>Slave</h1>
                             <small>/slav/</small>
+                            <button className="transparent">
                             <Image src={speakerIcon} alt='speaker icon'/>
+                            </button>
                         </div>
 
                         <div className="right">

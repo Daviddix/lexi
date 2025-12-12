@@ -70,6 +70,10 @@ aside .sidebar-image-container{
     gap: .8rem;
 }
 
+.sidebar-heading-top .left button{
+    display: flex;
+}
+
 .sidebar-heading-top .left h1{
     font-size: 2.8rem;
     font-weight: 600;
@@ -90,7 +94,7 @@ aside .sidebar-image-container{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 70%;
+    width: 55%;
     height: 3rem;
     margin-left: 5%;
 }
@@ -162,6 +166,7 @@ aside .sidebar-image-container{
 .insight-text p{
    font-family: var(--font-cormorant-infant);
    font-size: 1.4rem;
+   letter-spacing: .2px;
    color: #fff;
    line-height: 1.5;
    font-weight: 100;
