@@ -13,7 +13,7 @@
 }
 
 .header-left button img{
-    width: 2rem;
+    width: 1.5rem;
 }
 
 .header-searchbar{
@@ -73,7 +73,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 4.5rem;
+        height: 4rem;
     }
 
     .header-searchbar{
@@ -83,7 +83,7 @@
     .header-left{
         display: flex;
         align-items: center;
-        gap: .5rem;
+        gap: 1rem;
     }
 
     .header-left h3{

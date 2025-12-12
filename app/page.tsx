@@ -6,7 +6,7 @@ function Page() {
   return (
     <main>
       <Header />
-      <Sidebar />
+      {/* <Sidebar /> */}
     </main>
   )
 }
