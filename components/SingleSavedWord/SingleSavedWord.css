@@ -52,11 +52,11 @@
         transform: none;
     }
     50%{
-       transform: translateX(-5px) rotate(-30deg);
+       transform: translateX(-5px) rotate(-15deg);
     }
 
     80%{
-        transform: translateX(5px) rotate(30deg);
+        transform: translateX(5px) rotate(15deg);
     }
 
     100%{

@@ -5,11 +5,15 @@ import Image from "next/image"
 import EmptySavedWords from "../EmptySavedWords/EmptySavedWords"
 import ErrorSavedWords from "../ErrorSavedWords/ErrorSavedWords"
 
-const SavedWords = () => {
+type showSavedWordsProp = {
+    goBack: (value: boolean) => void
+}
+
+const SavedWords = ({ goBack }: showSavedWordsProp) => {
   return (
     <div className="saved-words">
     <div className="saved-words-header">
-        <button className="clickable">
+        <button className="clickable" onClick={() => goBack(false)}>
           <Image alt="back icon" src={backIcon} />
         </button>
         <h2>SAVED WORDS</h2>
