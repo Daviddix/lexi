@@ -17,13 +17,13 @@ const SavedWords = () => {
 
     <div className="h-divider"></div>
 
-    {/* <div className="single-saved-words-container">
+    <div className="single-saved-words-container">
         <SingleSavedWord />
-    </div> */}
+    </div>
 
     {/* <EmptySavedWords /> */}
 
-    <ErrorSavedWords />
+    {/* <ErrorSavedWords /> */}
 
     </div>
   )

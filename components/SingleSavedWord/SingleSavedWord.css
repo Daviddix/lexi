@@ -7,6 +7,7 @@
     flex-direction: column;
     gap: .5rem;
     color: #fff;
+    transition: all 0.3s ease;
 }
                             
 .single-saved-word .single-saved-word-top{
@@ -34,4 +35,31 @@
 .single-saved-word-bottom span{
     font-size: 1.2rem;
     font-family: var(--font-cormorant-infant);
+}
+
+.single-saved-word:hover{
+    background-color: #ffffff03;
+    backdrop-filter: blur(20px);
+    transform: translateY(-2px);
+}
+
+.single-saved-word-top button:hover{
+    animation: 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards swing;
+}
+
+@keyframes swing {
+    0%{
+        transform: none;
+    }
+    50%{
+       transform: translateX(-5px) rotate(-30deg);
+    }
+
+    80%{
+        transform: translateX(5px) rotate(30deg);
+    }
+
+    100%{
+        transform: none;
+    }
 }
