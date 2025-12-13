@@ -4,11 +4,15 @@ import randomIcon from "./assets/random-icon.svg"
 import searchIcon from "./assets/search-icon.svg"
 import "./Header.css"
 
-function Header() {
+type HeaderProps = {
+    setShowMenu: (show: boolean) => void;
+}
+
+function Header({ setShowMenu }: HeaderProps) {
   return (
     <div className="header">
         <div className="header-left">
-            <button className="clickable">
+            <button className="clickable" onClick={() => setShowMenu(true)}>
                 <Image src={menuIcon} alt="menu icon" />
             </button>
             <h3>Lexi</h3>

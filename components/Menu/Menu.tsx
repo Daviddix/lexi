@@ -8,18 +8,31 @@ import bookmarkIcon from "./assets/bookmark-icon-menu.svg"
 import SavedWords from '../SavedWords/SavedWords'
 import { useState } from 'react'
 
-function Menu() {
+type MenuProps = {
+    setShowMenu: (show: boolean) => void;
+}
+
+function Menu({ setShowMenu }: MenuProps) {
     const [showSavedWords, setShowSavedWords] = useState(false);
+    const [isClosing, setIsClosing] = useState(false);
+
+    const handleClose = () => {
+        setIsClosing(true);
+        // Wait for animation to finish before removing component
+        setTimeout(() => {
+            setShowMenu(false);
+        }, 1000); // Match the animation duration
+    };
 
   return (
-    <div className="menu-overlay">
-    <div className='menu-content'>
+    <div className={`menu-overlay ${isClosing ? 'closing' : ''}`}>
+    <div className={`menu-content ${isClosing ? 'slide-out' : ''}`}>
         <div className={`menu-inner ${showSavedWords ? 'show-saved' : ''}`}>
             {/* Main Menu Panel */}
             <div className="menu-main">
                 <div className="menu-header">
                     <h2>Lexi</h2>
-                    <button className='clickable'>
+                    <button onClick={handleClose} className='clickable'>
                         <Image src={closeIcon} alt='close' />
                     </button>
                 </div>

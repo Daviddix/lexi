@@ -1,14 +1,16 @@
+"use client"
 import Header from '@/components/Header/Header'
 import Menu from '@/components/Menu/Menu'
 import Sidebar from '@/components/Sidebar/Sidebar'
-import React from 'react'
+import React, { useState } from 'react'
 
 function Page() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <main>
-      <Header />
+      <Header setShowMenu={setShowMenu} />
       {/* <Sidebar /> */}
-      <Menu />
+      {showMenu && <Menu setShowMenu={setShowMenu} />}
     </main>
   )
 }
