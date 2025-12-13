@@ -3,6 +3,7 @@ import SingleSavedWord from "../SingleSavedWord/SingleSavedWord"
 import backIcon from "./assets/back-icon.svg"
 import Image from "next/image"
 import EmptySavedWords from "../EmptySavedWords/EmptySavedWords"
+import ErrorSavedWords from "../ErrorSavedWords/ErrorSavedWords"
 
 const SavedWords = () => {
   return (
@@ -20,8 +21,10 @@ const SavedWords = () => {
         <SingleSavedWord />
     </div> */}
 
-    <EmptySavedWords />
-    
+    {/* <EmptySavedWords /> */}
+
+    <ErrorSavedWords />
+
     </div>
   )
 }
