@@ -1,0 +1,37 @@
+.single-saved-word{
+    background-image: var(--black-gradient-02);
+    border: 1px solid var(--black-lighter-01);
+    padding: .8rem;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: #fff;
+}
+                            
+.single-saved-word .single-saved-word-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-saved-word-top h3{
+    font-size: 1.6rem;
+}
+
+.single-saved-word .single-saved-word-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 40%;
+}
+
+.single-saved-word-bottom > img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.single-saved-word-bottom span{
+    font-size: 1.2rem;
+    font-family: var(--font-cormorant-infant);
+}

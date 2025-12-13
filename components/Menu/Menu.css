@@ -12,9 +12,24 @@
 .menu-overlay .menu-content{
     height: 100%;
     width: 100%;
-    max-width: 30rem;
+    max-width: 35rem;
     background-image: var(--glow-gradient);
     padding: 2rem 1rem;
+    overflow-y: auto;
+}
+
+.menu-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.menu-content::-webkit-scrollbar-track {
+  background: var(--black-01);        /* color of the tracking area */
+  border-left: 1px solid #47474759;
+}
+
+.menu-content::-webkit-scrollbar-thumb {
+  background-color: var(--black-lighter-01);
+  border-radius: 4px;
 }
 
 .menu-content .menu-header{

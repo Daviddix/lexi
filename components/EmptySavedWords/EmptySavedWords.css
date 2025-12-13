@@ -1,0 +1,26 @@
+.empty-saved-words{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empty-saved-words-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    max-width: 25rem;
+}
+
+.empty-saved-words-content h2{
+   font-family: var(--font-cormorant-infant);
+}
+
+.empty-saved-words-content p{
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: var(--font-cormorant-infant);
+    color: var(--off-white);
+    font-weight: 100;
+}
