@@ -14,7 +14,30 @@
     width: 100%;
     max-width: 35rem;
     background-image: var(--glow-gradient);
+    overflow: hidden;
+}
+
+/* Sliding animation container */
+.menu-content .menu-inner {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-inner.show-saved {
+    transform: translateX(-50%);
+}
+
+.menu-main,
+.menu-saved {
+    width: 50%;
+    flex-shrink: 0;
+    box-sizing: border-box;
     padding: 2rem 1rem;
+}
+
+.menu-saved {
     overflow-y: auto;
 }
 
