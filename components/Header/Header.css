@@ -6,6 +6,10 @@
     max-width: 150rem;
     margin: 0 auto;
     gap: 1rem;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header-left h3{

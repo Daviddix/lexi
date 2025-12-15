@@ -59,3 +59,13 @@ button.transparent {
     background: transparent;
     border: none;
 }
+
+.globe-container {
+    border: solid red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}

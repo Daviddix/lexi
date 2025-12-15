@@ -21,7 +21,7 @@ function Menu({ setShowMenu }: MenuProps) {
         // Wait for animation to finish before removing component
         setTimeout(() => {
             setShowMenu(false);
-        }, 1000); // Match the animation duration
+        }, 500); // Match the animation duration
     };
 
   return (

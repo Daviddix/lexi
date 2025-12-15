@@ -15,7 +15,7 @@
     max-width: 35rem;
     background-image: var(--glow-gradient);
     overflow: hidden;
-    animation: slide-in 1s forwards;
+    animation: slide-in .5s forwards;
     transform: translateX(-100%);
 }
 
@@ -117,12 +117,12 @@
 }
 
 .menu-overlay .menu-content.slide-out {
-    animation: slide-out 1s forwards;
+    animation: slide-out .5s forwards;
 }
 
 /* Fade out overlay when closing */
 .menu-overlay.closing {
-    animation: fade-out 1s forwards;
+    animation: fade-out .5s forwards;
 }
 
 @keyframes fade-out {
